@@ -1,0 +1,167 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conjunto{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.titulo{
+    font-size: 65px;
+}
+
+header{
+    grid-column: 1 / span 2;
+    color:black;
+    padding-top: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    margin-bottom: 5px;
+}
+
+
+.logo{
+    width: 100px;
+    margin-right: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 65px; 
+    border-style: solid;
+    filter:grayscale(100%); 
+}
+
+
+#fila_menu{
+    display: none;
+}
+
+.menu{
+ font-size: 0px;
+}
+
+.lateral{
+    font-size: 0px ;
+    background-color: white;
+}
+
+#contenido{
+    display: grid;
+    grid-template-columns: auto;
+    
+    border-style: solid;
+    border-color: black;
+}
+
+.nombre_act{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / span 2;
+    color: black;
+    font-weight: bold;
+
+    margin-right: 20%;
+
+    font-size: 35px;
+}
+
+.fecha, .precio{
+    grid-column: 1 / span 2;
+    color: black;
+    font-weight: bold;
+
+    margin-left: 8%;
+
+    margin-right: 80%;
+    padding: 0.5%;
+
+    border-color: black; 
+    border-style: solid;
+    border-radius: 15%;
+    border-width: 2px;
+}
+
+.descripcion{
+    grid-row: 4 / span 2;
+    color: black;
+    font-weight: bold;
+
+    margin-left: 7%;
+    margin-right: 7%;
+
+
+    border-color: black; 
+    border-style: solid;
+    border-radius: 15%;
+    border-width: 2px;
+    padding: 5%;
+
+    text-align: justify;
+}
+
+
+.imagen{
+    width: 420px;
+    height: 260px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    
+    border-color: black; 
+    border-style: solid;
+    border-width: 2px;
+
+    filter:grayscale(100%); 
+}
+
+section{
+    display: none;
+}
+
+
+#facebook, #x, #imprimir{
+    font-size:0px; 
+}
+
+ 
+footer{
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+    border-style: solid;
+    border-color: black;
+
+    background: white;
+}
+
+.pie{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

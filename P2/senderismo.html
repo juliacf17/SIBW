@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Senderismo</title>
+    <link href="CSS/senderismo.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/logo.png" >
+    <script src="js/comentarios.js" defer ></script>
+</head>
+
+<body>
+
+<div id="conjunto">
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo"> 
+        <span class="titulo">ACTIVIDADES DE MONTAÑA</span>
+        
+    </header>  
+    
+    <div id="fila_menu">
+        <p>
+            <a class= "menu" href="" > Menú 1</a>
+            <a class= "menu" href="" > Menú 2</a>
+            <a class= "menu" href="" > Menú 3</a>
+        </p>
+    </div>
+
+    <aside class="lateral"><p class="texto_lateral">Elementos Auxiliares</p></aside>
+    
+    <div id="contenido">
+        <p class="nombre_act">Senderismo</p>
+        <p class="fecha"><span style="color: #1a3316;">Fecha:</span> 12/04/2024</p>
+        <p class="precio"><span style="color: #1a3316;">Precio:</span> 45€</p>
+
+        <p class="descripcion">
+
+            Nos complace presentarte una emocionante oportunidad para sumergirte en la belleza natural y explorar los paisajes más impresionantes de nuestra región: una jornada de senderismo diseñada para aquellos que buscan aventura, conexión con la naturaleza y una experiencia inolvidable.
+        </br></br>
+            Iniciamos nuestra jornada adentrándonos en el  Bosque de los Susurros, donde los altos pinos juegan con el viento para crear una melodía natural única, acompañándonos mientras observamos la diversa fauna que habita este lugar. A medida que avanzamos, el sendero nos lleva hacia el sereno Arroyo de Plata; aquí, nos detenemos brevemente para disfrutar de la paz que transmite su fluir y capturar momentos únicos con nuestras cámaras.
+        </br></br>
+            El camino asciende suavemente hacia el Mirador del Águila, ofreciéndonos una vista panorámica que abarca el valle y las montañas circundantes, un espectáculo de naturaleza en su máxima expresión que invita a una pausa para el almuerzo. Con el descenso, llegamos al Valle de las Sombras, cuyo nombre proviene de las cambiantes siluetas que proyectan las montañas, revelando una rica diversidad de plantas raras y endémicas que deleitan a los amantes de la botánica.
+        </br></br>    
+            Nuestra exploración continúa hacia el enigmático Bosque Encantado, un lugar que parece sacado de un cuento de hadas, con árboles centenarios y musgo que cubre cada superficie, creando una atmósfera de misterio y magia. Este bosque marca el último tramo de nuestra ruta, guiándonos suavemente hacia el punto de inicio, donde la jornada concluye.
+
+        </p>
+        <img src="img/pinos.jpg" alt="Pinos" class="imagen">
+        <img src="img/mirador.jpg" alt="Mirador" class="imagen">
+
+    </div>
+
+    <section>
+        <a id="facebook"> <img src="img/facebook.png" alt="Facebook" class="icono"> </a> 
+        <a id="x"> <img src="img/x.png" alt="X" class="icono">  </a> 
+        <a id="imprimir" href="./imprimir.html"> <img src="img/imprimir.png" alt="Imprimir" class="icono"> </a> 
+
+        <button onclick="abrirPanel()" type="button" id="new_comment"> Añadir Comentario</button>
+    </section>
+
+    <footer>
+        <p class="pie">@2024-Julia Cano</p>
+    </footer>
+
+    <input type="checkbox" class="checkbox" id="check">
+    <label class="oculto" for="check"></label>
+    <div id="activo" class="comment-panel">
+        <p class = "titulo_comentarios">Comentarios</p>
+        <p class = "comment"><b>Carmen</b>
+            <br>
+            <span>10/03/2024 14:27:11</span>
+            <br>
+            <span>"Estoy deseando iniciarme en actividades de montaña, ¡creo que este será un buen comienzo!" </span>
+        </p>
+
+        <p class = "comment"><b>Lucas</b>
+            <br>
+            <span>11/03/2024 08:49:31</span>
+            <br>
+            <span>"Quería regalar a mi pareja una actividad y se que esta será perfecta." </span>
+        </p>
+
+        <p id="more_comments"> 
+                
+        </p>
+
+        <form id="formulario">
+            <div>
+                <label for="nombre"><b>Nombre:</b></label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email"><b>Email:</b></label>
+                <input type="text" id="email" name="email" required>       
+            </div>
+            <div>
+                <label for="comentario"><b>Comentario:</b></label>
+                <textarea type="text" id="comentario" name="comentario" required></textarea>
+            </div>
+            
+            <button type="reset" id="enviar" class="boton"> Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* La clase conjunto la utilizo para organizar las distintas secciones de la página*/
+
+body{
+    background-color: #839680;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#conjunto{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 80% ;
+    grid-template-rows: 20% 70% 10%;
+}
+
+/*CABECERA*/
+
+header{
+    grid-column: 1 / span 2;
+    background: #4d4f2c;
+    padding-top: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color: white;
+    text-shadow: 5px 0px 7px black;
+    font-size: 65px;
+}
+
+.logo{
+    width: 100px;
+    margin-right: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 65px; 
+    border-style: solid;
+    
+}
+
+/*MENÚ*/
+
+#fila_menu{
+    grid-column: 1 / span 2;
+    margin-bottom: 5px;
+    background: #4d4f2c;
+    padding-left: 20px;
+}
+
+.menu{
+    text-decoration: none ;
+    background-color: #37381f;
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-style: solid;
+    border-color: black ;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.menu:hover{
+    background-color: #202110;
+}
+
+
+/*CONTENIDO CENTRAL DE LA PANTALLA PRINCIPAL*/
+
+section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+
+}
+
+.actividad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #6b8567;
+    border-radius: 30px;   
+    border-color: #37381f; 
+    border-style: solid;
+    border-width: 2px;
+
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.texto{
+    color: white;
+    font-weight: bold;
+}
+
+.imagen{
+    width: 250px;
+    height: 160px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    
+    border-color: #37381f; 
+    border-style: solid;
+    border-width: 2px;
+}
+
+/*BARRA LATERAL*/
+
+.lateral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b5937;
+    
+    border-radius: 30px;
+    border-color: #37381f; 
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.texto_lateral{
+    color: white; 
+    font-weight: bold;
+}
+
+/*PIE DE PÁGINA*/
+
+footer{
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+    background: #1a3316;
+}
+
+.pie{
+    color: white;
+    font-weight: bold;
+}
+
+
+
